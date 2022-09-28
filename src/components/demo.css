@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.containerdiv {
+  height: 100%;
+}
+
+.content {
+  container-type: inline-size; /* <--- should use this in parent class*/
+  background-color: rgb(226, 163, 167);
+  display: flex;
+}
+
+.main {
+  display: flex;
+}
+
+.firstArticle,
+.secondArticle,
+.thiredArticle,
+.fourthArticle {
+  border: 1px solid black;
+  margin: 5px;
+  padding: 5px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.btnView {
+  position: fixed;
+  height: 2px;
+}
+
+.btn {
+  height: 25px;
+}
+
+button {
+  height: 20px;
+  border: 1px solid black;
+  margin: 5px;
+}
+
+.mobile {
+  width: 320px;
+  height: 100%;
+  margin: auto;
+}
+
+.tablet {
+  width: 768px;
+  height: 100%;
+  margin: auto;
+}
+
+.laptop {
+  width: 1024px;
+  height: 100%;
+  margin: auto;
+}
+
+.fullScreen {
+  width: 100%;
+  height: 100%;
+}
+
+@container (max-width: 768px) {
+  /* when yous container query (container-type: inline-size;) plz add this type in parent class */
+  .main {
+    background-color: gray;
+    flex-direction: column;
+    overflow: scroll;
+  }
+  .content {
+    display: flex;
+    overflow: scroll;
+  }
+  p {
+    color: white;
+    height: 190px;
+    margin: 10px;
+  }
+}
+
+/* dont use two query .....use only one query  */
+
+/* --------- container query --------------- */
+
+@container (max-width: 320px) {
+  .main {
+    background-color: brown;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    overflow: scroll;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+  p {
+    color: white;
+    height: 600px;
+    margin: 10px;
+  }
+}
+
+/* ------------normal css media query ------------*/
+
+/* @media screen {
+  @media (max-width: 768px) {
+    .main {
+      background-color: rgb(228, 190, 147);
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 320px) {
+    .main {
+      background-color: rgb(0, 255, 225);
+      display: flex;
+      flex-direction: column;
+    }
+    p {
+      color: black;
+    }
+  }
+} */

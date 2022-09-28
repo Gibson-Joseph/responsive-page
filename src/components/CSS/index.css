@@ -1,0 +1,113 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  background-color: rgba(255, 81, 0, 0.313);
+  /* padding: 24px; */
+  margin: auto;
+}
+
+/* .htag {
+  text-align: center;
+  font-weight: 700px;
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 16px;
+} */
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+  border-radius: 8px;
+  margin: 24px;
+  overflow: hidden;
+}
+
+/* .htwotag {
+  text-align: center;
+  padding-bottom: 20px;
+  padding-left: 8px;
+  padding-right: 8px;
+} */
+
+/* .btn {
+  background-color: rgb(80, 80, 231);
+  color: white;
+  padding: 12px;
+  text-align: center;
+} */
+
+/* .imgTag {
+  width: 15rem;
+  margin: auto;
+} */
+
+.viewDiv {
+  width: 100%;
+  height: 100%;
+}
+
+.btnView {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  background-color: gray;
+  color: black;
+  width: 100%;
+  height: 20px;
+}
+
+.mobile {
+  width: 320px;
+  height: 100%;
+}
+
+.tablet {
+  width: 768px;
+  height: 100%;
+}
+
+.laptop {
+  width: 1024px;
+  height: 100%;
+}
+
+.fullScreen {
+  width: 100%;
+  height: 100%;
+}
+
+.noCondition {
+  margin: auto;
+  height: 100%;
+}
+
+/* @media screen {
+  @media (min-width: 1px) {
+    @media (min-height: 1px) {
+      @media (max-width: 9999px) {
+        @media (max-height: 9999px) {
+          body {
+            background: red;
+          }
+        }
+      }
+    }
+  }
+} */
+
+@media screen {
+  @media (max-width: 100%) {
+    .container {
+      background-color: red;
+    }
+  }
+}
