@@ -105,6 +105,8 @@ const Demo = () => {
     },
   };
 
+  console.log("hello");
+
   return (
     <div>
       <div className="btn">
